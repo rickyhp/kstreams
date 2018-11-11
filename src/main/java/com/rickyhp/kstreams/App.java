@@ -3,7 +3,6 @@ package com.rickyhp.kstreams;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
-import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KStreamBuilder;
@@ -12,25 +11,9 @@ import org.apache.kafka.streams.kstream.Produced;
 import org.apache.kafka.streams.Consumed;
 import java.util.Arrays;
 import java.util.Properties;
-import java.util.regex.Pattern;
-import org.apache.kafka.clients.consumer.ConsumerConfig;
-
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.Properties;
-import java.util.concurrent.CountDownLatch;
-import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
-import org.apache.kafka.streams.KafkaStreams;
-import org.apache.kafka.streams.StreamsConfig;
-import org.apache.kafka.streams.Topology;
-import org.apache.kafka.streams.processor.WallclockTimestampExtractor;
-
 import com.rickyhp.model.Purchase;
 import com.rickyhp.serializer.JsonDeserializer;
 import com.rickyhp.serializer.JsonSerializer;
-
-import java.util.Properties;
 
 public class App 
 {
